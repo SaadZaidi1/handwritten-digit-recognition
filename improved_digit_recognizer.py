@@ -35,8 +35,7 @@ class ImprovedDigitRecognizer:
         print(f"Training set shape: {self.x_train.shape}")
         print(f"Test set shape: {self.x_test.shape}")
         
-    def create_model(self):
-        """Create an improved CNN model"""
+    def create_model(self):
         model = tf.keras.Sequential([
             # First Convolutional Block
             tf.keras.layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
